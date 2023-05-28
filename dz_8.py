@@ -1,7 +1,7 @@
 #Напишите бота для техподдержки. Бот должен записывать обращения пользователей в файл.
 def zadacha_1():
     import telebot
-    bot = telebot.TeleBot('5611683928:AAFaqVZP2bWGwfPetaOKbj60QnrQ_iUw3y0')
+    bot = telebot.TeleBot('*************************')
     @bot.message_handler(commands=['техподдержка'])
     def send_welcome(message):
         bot.send_message(message.from_user.id,
@@ -17,7 +17,7 @@ def zadacha_1():
 # Напишите программу, которая позволяет считывать из файла вопрос, отвечать на него и отправлять ответ обратно пользователю.
 def zadacha_2():
     import telebot
-    bot = telebot.TeleBot('5611683928:AAFaqVZP2bWGwfPetaOKbj60QnrQ_iUw3y0')
+    bot = telebot.TeleBot('*****************************')
     @bot.message_handler(commands=['ответ'])
     def send_welcome(message):
         bot.send_message(message.from_user.id,
